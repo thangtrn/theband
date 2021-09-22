@@ -1,0 +1,93 @@
+// tablet
+@media screen and (max-width: 1023px) {
+}
+
+// moblie
+@media screen and (max-width: 767px) {
+  .isOpenMenu {
+    height: auto;
+  }
+
+  .header {
+    display: block;
+    overflow: hidden;
+    &-menu {
+      line-height: inherit;
+      display: block;
+      .menu-item {
+        display: block;
+        &:first-child {
+          display: inline-block;
+        }
+        &:last-child {
+          .menu-child {
+            position: initial;
+            &-link {
+              padding: 10px 16px;
+              margin-left: 20px;
+            }
+          }
+        }
+        &-link {
+          display: block;
+          padding: 16px 24px;
+        }
+      }
+    }
+    &-search {
+      display: none;
+    }
+    .header-menu-toggle {
+      display: inline-block;
+    }
+  }
+  .slider {
+    .slide-item {
+      .box-middle {
+        display: none;
+      }
+    }
+  }
+
+  .band {
+    &-cards {
+      display: block;
+      .card-item {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .tour-container {
+    .tour {
+      .tour-cards {
+        flex-direction: column;
+        .card-item {
+          margin-bottom: 16px;
+        }
+        .card-item:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .contact {
+    &-row {
+      flex-direction: column;
+      .contact-left,
+      .contact-form {
+        width: 100%;
+      }
+      .contact-left {
+        margin-bottom: 20px;
+      }
+      .form-top {
+        grid-template-columns: 1fr;
+      }
+      .form-half:first-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.tour-container {
+  max-width: 100%;
+  background-color: #000;
+  .tour {
+    max-width: 800px;
+    padding: 74px 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    &-heading,
+    &-title {
+      color: white;
+    }
+    &-calendar {
+      width: 100%;
+      background-color: white;
+      margin: 36px 0 32px;
+      position: relative;
+      &-month {
+        padding: 8px 16px;
+        font-size: 15px;
+        color: gray;
+        border-bottom: 1px solid #ccc;
+        line-height: 1.5;
+        &:not(:last-child)::after {
+          content: "Sold out";
+          margin-left: 16px;
+          padding: 2px 8px;
+          background-color: #f44336;
+          color: white;
+          font-size: inherit;
+        }
+        &:last-child::after {
+          content: "3";
+          padding: 0 8px;
+          background-color: #000;
+          color: white;
+          border-radius: 100%;
+          position: absolute;
+          right: 30px;
+        }
+      }
+    }
+    .tour-cards {
+      display: flex;
+      margin-bottom: 20px;
+      .card-item:not(:first-child) {
+        margin-left: 16px;
+      }
+      .card-item {
+        background-color: #000;
+        .card-img {
+          &:hover {
+            opacity: 0.6;
+          }
+          display: block;
+          width: 100%;
+          object-fit: cover;
+        }
+        .card-info {
+          background-color: #fff;
+          flex-direction: column;
+          padding: 15px 16px;
+          font-size: 15px;
+          line-height: 1.4;
+          &-location {
+            display: block;
+            font-weight: 700;
+          }
+          &-time {
+            display: block;
+            opacity: 0.6;
+          }
+          .buy-btn {
+            &:hover {
+              background-color: #ccc;
+              color: #000;
+            }
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .spacing-bottom {
+    margin-bottom: 15px;
+  }
+}

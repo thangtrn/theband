@@ -1,0 +1,36 @@
+.footer {
+  max-width: 100%;
+  padding: 74px 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-menu {
+    margin-bottom: 24px;
+    display: flex;
+    &-item {
+      margin-left: 6px;
+      font-size: 24px;
+      a {
+        &:hover {
+          opacity: 0.4;
+        }
+        color: #000;
+        opacity: 0.6;
+      }
+    }
+  }
+  .footer-desc {
+    font-size: 15px;
+    font-weight: 300;
+    color: #8e8e8e;
+    a {
+      text-decoration: underline;
+      color: #8e8e8e;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
